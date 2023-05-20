@@ -11,7 +11,7 @@ namespace ConsumoTarefas
     {
         static async Task Main(string[] args)
         {
-            /*
+            
             HttpClient client = new HttpClient { BaseAddress = new Uri("https://localhost:7038/")};
             var response = await client.GetAsync("api/Tarefa");
             var content = await response.Content.ReadAsStringAsync();
@@ -28,9 +28,9 @@ namespace ConsumoTarefas
                 writer.WriteLine($"UsuarioId:{tarefa.UsuarioId}");
                 writer.WriteLine();
             }
-            */
+            
 
-            string connectionString = "Data Source=endor.agentemr.com.br,2432;Initial Catalog=db_ProjetomvcProd;User ID=ryan;Password=!@G3nt3mrC0nt4b0*;";
+            string connectionString = "Data Source=endor.agentemr.com.br,2432;Initial Catalog=db_ProjetomvcProd;User ID=ryan;Password=*********";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 // Abra a conexão com o banco de dados
